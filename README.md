@@ -1,5 +1,7 @@
 # 知衡·人生解局
 
+[![检查公开技能包](https://github.com/zfrory15-max/zhiheng-life-compass/actions/workflows/validate.yml/badge.svg)](https://github.com/zfrory15-max/zhiheng-life-compass/actions/workflows/validate.yml)
+
 **把人生困境拆成能看清、能选择、能行动的问题。**
 
 这是一个面向 Codex、WorkBuddy 等支持 Skill 的智能体的中文知识与工作流程包。它帮助使用者分析职业瓶颈、家庭责任、子女教育、财富压力、社会比较和自我价值冲突，先澄清现实处境，再比较选择，形成可复盘的小行动。
@@ -83,7 +85,9 @@ python scripts/search.py "职业转型 家庭责任"
 
 公开版已在 Windows / Python 3.12.14 下通过 10 项自动测试，覆盖六主题的 12 条检索用例；ZIP 解包到含中文和空格的新目录后，从其他工作目录运行也全部通过。一次实际 Codex CLI 调用已显式读取公开目录、执行知识卡检索，并给出有约束的方案与一周行动。
 
-这些结果不代表所有问题都已验证。公开版同名技能的自动发现、WorkBuddy 导入调用和 GitHub Actions 尚未实测；无 Python 阅读目前只完成了 Markdown 路径与锚点的静态检查。详情见[验证记录](docs/验证记录.md)。
+发布后，GitHub Actions 的 Ubuntu／Windows、Python 3.10／3.12 四组检查全部通过；远端 27 个文件已与本地发布版逐一核对路径和内容哈希。
+
+这些结果不代表所有问题都已验证。公开版同名技能的自动发现、WorkBuddy 导入调用尚未实测；无 Python 阅读目前只完成了 Markdown 路径与锚点的静态检查。详情见[验证记录](docs/验证记录.md)。
 
 本项目目前保留权利，公开可阅读，尚未附开源许可证；具体说明见 [RIGHTS.md](RIGHTS.md)。不要因源码公开而假定获得任意修改、再分发或商业使用权。
 
