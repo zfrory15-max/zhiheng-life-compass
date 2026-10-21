@@ -27,7 +27,7 @@
 
 下载上方的 **Skill 安装包**，文件名为 `zhiheng-life-compass-public-v1.0.0.zip`。ZIP 内只有一层 `zhiheng-life-compass/` 技能目录，包含 `SKILL.md`、`references/`、`data/` 和检索脚本。
 
-**Codex：**解压后，把整个 `zhiheng-life-compass` 文件夹放到：
+**Codex**：解压后，把整个 `zhiheng-life-compass` 文件夹放到：
 
 ```text
 ~/.agents/skills/zhiheng-life-compass/
@@ -41,7 +41,7 @@ C:\Users\你的用户名\.agents\skills\zhiheng-life-compass\
 
 确认 `SKILL.md` 直接位于该目录中，在新的对话里选择技能，或输入下面的调用示例。
 
-**WorkBuddy：**在支持 ZIP 技能导入的版本中，从技能导入入口选择同一个 Skill 安装包。具体入口以当前版本为准；本公开包的 WorkBuddy 导入与实际调用尚未实测。
+**WorkBuddy**：在支持 ZIP 技能导入的版本中，从技能导入入口选择同一个 Skill 安装包。具体入口以当前版本为准；本公开包的 WorkBuddy 导入与实际调用尚未实测。
 
 如果已有同名完整版，请先备份到技能扫描目录之外，再安装公开版，避免直接覆盖或合并。公开版没有完整版的课程全文检索能力。
 
