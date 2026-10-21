@@ -33,10 +33,10 @@
 ~/.agents/skills/zhiheng-life-compass/
 ```
 
-Windows 对应路径为：
+Windows 可在文件资源管理器地址栏输入以下路径（`%USERPROFILE%` 会自动对应当前用户目录）：
 
 ```text
-C:\Users\你的用户名\.agents\skills\zhiheng-life-compass\
+%USERPROFILE%\.agents\skills\zhiheng-life-compass\
 ```
 
 确认 `SKILL.md` 直接位于该目录中，在新的对话里选择技能，或输入下面的调用示例。
@@ -111,7 +111,7 @@ python -m http.server 8770
 
 Skill 公开版已通过 10 项自动测试，覆盖六主题的 12 条检索用例，并完成含中文和空格目录的 ZIP 迁移测试。一次实际 Codex CLI 调用已显式读取公开目录、检索知识卡并给出方案与一周行动。公开版同名技能的自动发现、WorkBuddy 导入调用尚未实测；无 Python 阅读已完成 Markdown 路径与锚点的静态检查。详见 [验证记录](docs/验证记录.md)。
 
-Skill 发布包可通过以下命令构建，校验值见 [SHA256SUMS.txt](dist/SHA256SUMS.txt)：
+Skill 发布包可通过以下命令构建，仓库中下载包的校验值见 [SHA256SUMS.txt](https://github.com/zfrory15-max/zhiheng-life-compass/blob/main/dist/SHA256SUMS.txt)：
 
 ```bash
 python scripts/build_release.py
