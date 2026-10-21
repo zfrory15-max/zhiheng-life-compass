@@ -1,4 +1,50 @@
-# 知衡·人生解局
+# 知衡中产指南
+
+**把职业、现金、家庭和教育放在一起看，少做耗尽退路的选择。**
+
+[在线阅读指南](https://zfrory15-max.github.io/zhiheng-life-compass/) · [下载独立网页包](https://github.com/zfrory15-max/zhiheng-life-compass/raw/refs/heads/main/zhiheng-guide-web.zip)
+
+## 699 条可以照着做的建议
+
+全书分为 **34 个主题**，围绕职业收入、能力积累、求职转岗、第二收入、家庭现金、住房与长期支出、伴侣合作、子女教育、养老照护、社会比较和压力下的判断展开。
+
+每条包括：
+
+- **标签**：行动类型、适用场景、成本和时间提示。
+- **重点判断**：用淡紫色背景标出核心观点。
+- **三步做法**：说明从哪里开始、需要核对什么、怎样往下走。
+- **填写模板与检查信号**：做完能留下结果，也能判断该继续、调整还是停止。
+
+建议用于比较自己的处境，不承诺避免所有损失或保证生活水平。标签是阅读提示，不是证据评级或收益评分。
+
+## 怎么读
+
+先搜索眼前的问题，例如“奖金”“转岗”“陪读”“照护”。挑一条最相关的，照着步骤做，填完模板，再回来看结果。
+
+网页支持完整目录、中文搜索、轻量练习筛选、只看要点、收藏、明暗切换，以及复制执行清单和条目链接。手机可以通过顶部主题菜单定位。
+
+收藏只保存在当前浏览器，没有账号、个人资料上传或统计脚本。自动复制不可用时，可以从弹出的文本框手动复制。
+
+## 本机使用与部署
+
+下载独立网页包并解压，打开 `index.html`。网页采用原生 HTML、CSS 和 JavaScript，无需付费 API 或构建工具。
+
+也可以在解压目录运行：
+
+```bash
+python -m http.server 8770
+```
+
+然后访问 `http://localhost:8770/`。更换地址或浏览器后，原地址中的收藏不会自动迁移。
+
+根目录的 `index.html`、`styles.css`、`app.js`、`guide-data.js` 和 `favicon.svg` 是网页文件。`.nojekyll` 用于 GitHub Pages 静态发布。699 条正文保存在 `guide-data.js` 中。
+
+## 智能体使用
+
+仓库还保留了既有的中文 Skill：39 张知识卡、对话澄清与行动流程，可供 Codex、WorkBuddy 等智能体调用。**699 条网页指南和 39 张 Skill 知识卡是两个入口**；本次网页发布没有冒充重新训练模型，也没有把完整课程文稿加入公开仓库。
+
+<details>
+<summary>展开 Skill 安装、调用与验证说明</summary>
 
 [![检查公开技能包](https://github.com/zfrory15-max/zhiheng-life-compass/actions/workflows/validate.yml/badge.svg)](https://github.com/zfrory15-max/zhiheng-life-compass/actions/workflows/validate.yml)
 
@@ -92,3 +138,6 @@ python scripts/search.py "职业转型 家庭责任"
 本项目目前保留权利，公开可阅读，尚未附开源许可证；具体说明见 [RIGHTS.md](RIGHTS.md)。不要因源码公开而假定获得任意修改、再分发或商业使用权。
 
 原课程、录音及讲稿的权利属于相应权利人。仓库公开不扩展第三方原材料的使用权限；请勿将本仓库的存在视为对原课程复制、传播或商业使用的授权。
+
+</details>
+

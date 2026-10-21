@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="知衡中产指南：34 个主题 · 699 条，围绕职业、现金、家庭、教育与生活退路的具体做法。">
+  <meta name="theme-color" content="#ffffff">
+  <title>知衡中产指南 · 34 个主题 · 699 条</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('zhiheng-guide-theme')||'light'}catch(e){}</script>
+  <script defer src="guide-data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="bar">
+    <div class="brand"><a href="#" id="home-link">知衡中产指南</a><span>34 个主题 · 699 条</span></div>
+    <div class="tools" aria-label="阅读工具">
+      <button class="pill active" id="show-all" aria-pressed="true">全部</button>
+      <button class="pill" id="quick-filter" aria-pressed="false" title="以梳理、填写或一次谈话为起点，不要求当天完成全部步骤">轻量练习</button>
+      <button class="pill" id="saved-filter" aria-pressed="false">只看收藏</button>
+      <button class="pill" id="brief-toggle" aria-pressed="false">只看要点</button>
+      <div class="search">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg>
+        <label for="search-input" class="sr-only">搜索观点、步骤和清单</label>
+        <input id="search-input" type="search" placeholder="搜索观点、步骤、清单…" autocomplete="off">
+        <kbd aria-hidden="true">/</kbd>
+      </div>
+      <span id="result-count" role="status" aria-live="polite">699 / 699 条</span>
+      <button id="theme-toggle" class="pill" aria-label="切换到夜间阅读">明/暗</button>
+    </div>
+    <div class="mobile-jump"><label for="topic-select">主题</label><select id="topic-select"><option value="all">全部主题</option></select></div>
+  </header>
+  <div class="shell">
+    <aside class="toc" aria-label="章节与建议目录"><nav id="toc-list"></nav></aside>
+    <main id="main" tabindex="-1">
+      <div id="guide-list"></div>
+      <div id="empty-state" hidden><h2 id="empty-title">没有找到相关建议</h2><p id="empty-text">试试更短的词，或者取消筛选。</p><button id="reset-filters" class="pill">显示全部建议</button></div>
+      <noscript><p>请启用 JavaScript 阅读和搜索指南。也可以打开<a href="https://github.com/zfrory15-max/zhiheng-life-compass/tree/main/references/topics">文字版主题目录</a>。</p></noscript>
+      <footer><span>知衡中产指南</span><span>从当前最要紧的一条开始。步骤中的数量和期限可按实际调整。收藏保存在当前浏览器。</span><a href="https://github.com/zfrory15-max/zhiheng-life-compass" target="_blank" rel="noopener noreferrer">GitHub</a></footer>
+    </main>
+  </div>
+  <button id="back-top" class="pill" hidden>↑ 顶部</button>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="copy-dialog" aria-labelledby="copy-title"><h2 id="copy-title">手动复制</h2><p>自动复制没有成功，请选中下面的文字复制。</p><label class="sr-only" for="copy-text">要复制的文字</label><textarea id="copy-text" readonly rows="5"></textarea><button id="close-copy" class="pill">关闭</button></dialog>
+</body>
+</html>
