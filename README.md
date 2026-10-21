@@ -7,9 +7,9 @@
 | 入口 | 适合怎样使用 | 内容 |
 | --- | --- | --- |
 | [网页指南](https://zfrory15-max.github.io/zhiheng-life-compass/) | 自己阅读、搜索、收藏，照着步骤做 | 34 个主题、699 条建议，附标签、重点高亮、三步做法和填写模板 |
-| [知衡·人生解局 Skill](SKILL.md) | 让 Codex、WorkBuddy 等智能体结合你的具体处境展开对话 | 6 类场景、39 张知识卡、问题澄清、选择比较和七天行动 |
+| [知衡·人生解局 Skill](SKILL.md) | 让 Codex、WorkBuddy 等智能体结合你的具体处境展开对话 | 34 个主题判断指南、699 条行动、102 条材料机制，另保留 39 张基础卡 |
 
-[在线阅读](https://zfrory15-max.github.io/zhiheng-life-compass/) · [下载 Skill 安装包](https://github.com/zfrory15-max/zhiheng-life-compass/raw/refs/heads/main/dist/zhiheng-life-compass-public-v1.0.0.zip) · [下载网页包](https://github.com/zfrory15-max/zhiheng-life-compass/raw/refs/heads/main/zhiheng-guide-web.zip)
+[在线阅读](https://zfrory15-max.github.io/zhiheng-life-compass/) · [下载 Skill v2 安装包](https://github.com/zfrory15-max/zhiheng-life-compass/raw/refs/heads/main/dist/zhiheng-life-compass-public-v2.0.0.zip) · [浏览 34 个 Skill 主题](references/index.md) · [下载网页包](https://github.com/zfrory15-max/zhiheng-life-compass/raw/refs/heads/main/zhiheng-guide-web.zip)
 
 ## Skill：知衡·人生解局
 
@@ -25,7 +25,7 @@
 
 ### 安装 Skill
 
-下载上方的 **Skill 安装包**，文件名为 `zhiheng-life-compass-public-v1.0.0.zip`。ZIP 内只有一层 `zhiheng-life-compass/` 技能目录，包含 `SKILL.md`、`references/`、`data/` 和检索脚本。
+下载上方的 **Skill v2 安装包**，文件名为 `zhiheng-life-compass-public-v2.0.0.zip`。ZIP 内只有一层 `zhiheng-life-compass/` 技能目录，包含 `SKILL.md`、`references/`、`data/` 和检索脚本。
 
 **Codex**：解压后，把整个 `zhiheng-life-compass` 文件夹放到：
 
@@ -61,18 +61,25 @@ Windows 可在文件资源管理器地址栏输入以下路径（`%USERPROFILE%`
 
 ### Skill 包含什么
 
-- **39 张改写知识卡**，覆盖六类人生场景，包含观点、适用条件、分析问题、行动练习与限制。
-- **对话与行动流程**：澄清处境，比较选择，形成下一周行动。
+- **34 个主题判断指南**：每个主题包含适用情境、三个关键区分、三条材料机制、澄清问题、可比较的做法及限制。
+- **699 条具体行动**：与网页建议对应，含判断、做法、填写模板、实际产出和复盘信号；智能体按你的处境挑选和改写。
+- **102 条材料机制**：回读所提供文稿的相关上下文后改写，帮助区分相似表象背后的不同原因，而非只复述行动标题。
+- **39 张基础知识卡**：保留原有六类问题的基本框架，按需要补充阅读。
+- **按需读取**：检索具体问题，同时读取相关主题的条件和限制，通常选一至三个行动。
 - **本地检索工具**：可选 Python 3.10+，只用标准库，无需付费 API 或向量数据库。
 - **Markdown 阅读入口**：没有 Python 时，可从 [主题目录](references/index.md) 直接读取知识卡。
 
 在技能目录中可以运行：
 
 ```bash
-python scripts/search.py "职业转型 家庭责任"
+python scripts/consult.py "奖金迟发，房贷月底扣款" --top-k 3
+python scripts/consult.py "照护老人后怎么复工" --topic family-capacity
+python scripts/consult.py --list-topics
 ```
 
-**当前 Skill 使用 39 张知识卡；网页中的 699 条建议尚未同步进 Skill 知识库。** 两者目前分别更新，下载网页包不会安装 Skill。
+**v2 已把网页的 34 个主题、699 条建议纳入 Skill，并增加主题层面的判断条件与材料分析。** 例如：收入总额与来源集中、多套房产与同一客群的依赖、家务执行与操心责任、教育花费与独立能力，需要分别判断。下载网页包用于阅读；安装 Skill 请使用上面的 Skill v2 包。
+
+没有 Python，也能直接阅读 [34 主题目录](references/index.md)。原有基础卡检索仍可使用 `python scripts/search.py "关键词"`。
 
 [查看 SKILL.md](SKILL.md) · [使用指南](docs/使用指南.md) · [合成调用示例](references/examples.md) · [验证记录](docs/验证记录.md)
 
@@ -109,7 +116,7 @@ python -m http.server 8770
 
 [![检查公开技能包](https://github.com/zfrory15-max/zhiheng-life-compass/actions/workflows/validate.yml/badge.svg)](https://github.com/zfrory15-max/zhiheng-life-compass/actions/workflows/validate.yml)
 
-Skill 公开版已通过 10 项自动测试，覆盖六主题的 12 条检索用例，并完成含中文和空格目录的 ZIP 迁移测试。一次实际 Codex CLI 调用已显式读取公开目录、检索知识卡并给出方案与一周行动。公开版同名技能的自动发现、WorkBuddy 导入调用尚未实测；无 Python 阅读已完成 Markdown 路径与锚点的静态检查。详见 [验证记录](docs/验证记录.md)。
+v2 的验证覆盖主题与行动结构、材料定位、具体情境检索、公开包边界、Markdown链接和ZIP迁移。每项的实际结果与未覆盖范围见 [验证记录](docs/验证记录.md)，远端构建状态见上方徽章。WorkBuddy 导入调用尚未实测；不能将目录规范或 Codex 的结果视为 WorkBuddy 已通过。
 
 Skill 发布包可通过以下命令构建，仓库中下载包的校验值见 [SHA256SUMS.txt](https://github.com/zfrory15-max/zhiheng-life-compass/blob/main/dist/SHA256SUMS.txt)：
 

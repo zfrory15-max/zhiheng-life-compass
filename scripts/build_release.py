@@ -8,10 +8,11 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 NAME = "zhiheng-life-compass"
-VERSION = "public-v1.0.0"
+VERSION = "public-v2.0.0"
 ROOT_FILES = ("SKILL.md", "README.md", "RIGHTS.md", ".gitignore", ".gitattributes")
 PATTERNS = ("agents/*.yaml", "references/*.md", "references/topics/*.md",
-            "data/cards.json", "scripts/*.py", "docs/*.md", "tests/*.py",
+            "references/scenarios/*.md", "data/cards.json", "data/themes.json",
+            "data/themes/*.json", "scripts/*.py", "docs/*.md", "tests/*.py", "tests/*.json",
             ".github/workflows/*.yml")
 
 
@@ -38,6 +39,23 @@ def public_files():
         for source in card["sources"]:
             if set(source) != allowed_source_keys:
                 raise ValueError("来源字段不符合公开白名单：" + card["id"])
+    catalog = json.loads((ROOT / "data/themes.json").read_text(encoding="utf-8"))
+    if len(catalog) != 34 or len({t['id'] for t in catalog}) != 34:
+        raise ValueError("细分主题应为34个")
+    actions = []
+    for topic in catalog:
+        shard = json.loads((ROOT / "data/themes" / (topic['id'] + '.json')).read_text(encoding="utf-8"))
+        if len(shard['actions']) != topic['count'] or len(shard['analysis']['mechanisms']) != 3:
+            raise ValueError("主题条目数或机制数不一致：" + topic['id'])
+        actions.extend(shard['actions'])
+        for record in [*shard['actions'], *shard['analysis']['mechanisms']]:
+            for source in record['sources']:
+                if set(source) != {'section_id', 'doc_id', 'title', 'paragraph', 'support', 'path'}:
+                    raise ValueError("细化资料来源字段超出公开白名单")
+                if not source['path'].startswith('references/evidence-map.md#'):
+                    raise ValueError("细化资料来源链接必须指向公开定位登记")
+    if len(actions) != 699 or len({a['id'] for a in actions}) != 699:
+        raise ValueError("行动建议应为699个唯一条目")
     return sorted(paths)
 
 

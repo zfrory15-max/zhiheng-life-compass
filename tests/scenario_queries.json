@@ -1,0 +1,479 @@
+[
+  {
+    "topic": "career",
+    "query": "简历投了很多没回应，还要花钱考证吗",
+    "expected_ids": [
+      "CAR01"
+    ]
+  },
+  {
+    "topic": "career",
+    "query": "熟悉公司系统，离开单位后拿什么证明能力",
+    "expected_ids": [
+      "CAR02"
+    ]
+  },
+  {
+    "topic": "work-risk",
+    "query": "工资不错但只靠一个单位，收入有什么弱点",
+    "expected_ids": [
+      "W001"
+    ]
+  },
+  {
+    "topic": "work-risk",
+    "query": "客户开始用新工具自行完成流程，我的工序会不会被跳过",
+    "expected_ids": [
+      "W002"
+    ]
+  },
+  {
+    "topic": "work-skill",
+    "query": "只会公司旧系统，怎样检验技能能不能换地方用",
+    "expected_ids": [
+      "W026"
+    ]
+  },
+  {
+    "topic": "work-skill",
+    "query": "交接总返工，沟通能力怎么用结果证明",
+    "expected_ids": [
+      "W027"
+    ]
+  },
+  {
+    "topic": "work-move",
+    "query": "招聘岗位名称很高级，面试应该问交付什么",
+    "expected_ids": [
+      "W051"
+    ]
+  },
+  {
+    "topic": "work-move",
+    "query": "简历只有工作职责，没有相关成果怎么办",
+    "expected_ids": [
+      "W052"
+    ]
+  },
+  {
+    "topic": "work-org",
+    "query": "每天加班干活却一直不能晋升，先查什么",
+    "expected_ids": [
+      "W076"
+    ]
+  },
+  {
+    "topic": "work-org",
+    "query": "临时加任务，原来的工作怎么办",
+    "expected_ids": [
+      "W078"
+    ]
+  },
+  {
+    "topic": "work-business",
+    "query": "客户不断临时加需求，服务边界怎么定",
+    "expected_ids": [
+      "W101"
+    ]
+  },
+  {
+    "topic": "work-business",
+    "query": "副业准备同时开十种业务，担心交付不过来",
+    "expected_ids": [
+      "W102"
+    ]
+  },
+  {
+    "topic": "work-network",
+    "query": "认识的人都在同一个单位，失业之后怎样找信息",
+    "expected_ids": [
+      "W126"
+    ]
+  },
+  {
+    "topic": "work-network",
+    "query": "想把两位朋友介绍给彼此合作，要先做什么",
+    "expected_ids": [
+      "W128"
+    ]
+  },
+  {
+    "topic": "work-info",
+    "query": "宏观经济数据变好了，可我的岗位仍不招人",
+    "expected_ids": [
+      "W151"
+    ]
+  },
+  {
+    "topic": "work-info",
+    "query": "一位创业成功的人推荐投资，经验可以照搬吗",
+    "expected_ids": [
+      "W153"
+    ]
+  },
+  {
+    "topic": "work-culture",
+    "query": "读了很多理论，怎样检验它不是只让自己显得懂",
+    "expected_ids": [
+      "W176",
+      "W178"
+    ]
+  },
+  {
+    "topic": "work-culture",
+    "query": "做事反复踩同一个坑，还应该只是更加努力吗",
+    "expected_ids": [
+      "W177"
+    ]
+  },
+  {
+    "topic": "finance",
+    "query": "房产很多但现金不足，下个月账单怎么安排",
+    "expected_ids": [
+      "FIN01"
+    ]
+  },
+  {
+    "topic": "finance",
+    "query": "为了孩子花光养老和休息时间，应该先算哪些代价",
+    "expected_ids": [
+      "FIN03"
+    ]
+  },
+  {
+    "topic": "money-cash",
+    "query": "年终奖还没到账，却已经安排它支付全年账单",
+    "expected_ids": [
+      "M001"
+    ]
+  },
+  {
+    "topic": "money-cash",
+    "query": "公司报销迟迟没下来，生活费能把它算进去吗",
+    "expected_ids": [
+      "M002"
+    ]
+  },
+  {
+    "topic": "money-income",
+    "query": "夫妻都在同一个行业工作，两份工资是否就更稳",
+    "expected_ids": [
+      "M021"
+    ]
+  },
+  {
+    "topic": "money-income",
+    "query": "工资和公司股票都靠同一家企业，有什么隐患",
+    "expected_ids": [
+      "M022"
+    ]
+  },
+  {
+    "topic": "money-commitment",
+    "query": "月供能还得起，签长期承诺前还要核对什么",
+    "expected_ids": [
+      "M041"
+    ]
+  },
+  {
+    "topic": "money-commitment",
+    "query": "先付定金占一个名额，后续还需要交什么钱",
+    "expected_ids": [
+      "M043"
+    ]
+  },
+  {
+    "topic": "money-house",
+    "query": "卖旧房再买新房，两笔交易之间没有现金怎么办",
+    "expected_ids": [
+      "M062"
+    ]
+  },
+  {
+    "topic": "money-house",
+    "query": "房子挂牌很贵，能不能按这个价格安排下一笔支出",
+    "expected_ids": [
+      "M063"
+    ]
+  },
+  {
+    "topic": "money-consumption",
+    "query": "买设备后还要继续买配套，真实花费怎么算",
+    "expected_ids": [
+      "M082"
+    ]
+  },
+  {
+    "topic": "money-consumption",
+    "query": "会员费已经付了，是否应该多消费才不浪费",
+    "expected_ids": [
+      "M083"
+    ]
+  },
+  {
+    "topic": "money-business",
+    "query": "公司周转的钱和家庭生活费都在一个账户，怎么分清",
+    "expected_ids": [
+      "M101"
+    ]
+  },
+  {
+    "topic": "money-business",
+    "query": "亲人让我在担保文件上签字，说这是信任",
+    "expected_ids": [
+      "M103"
+    ]
+  },
+  {
+    "topic": "money-retirement",
+    "query": "退休计划不能只看年龄，生活任务变了怎么办",
+    "expected_ids": [
+      "M121"
+    ]
+  },
+  {
+    "topic": "money-retirement",
+    "query": "想换个地方养老，先试住如何判断适不适合",
+    "expected_ids": [
+      "M123"
+    ]
+  },
+  {
+    "topic": "money-care",
+    "query": "陪护白班和夜班之间没人接手，怎么安排",
+    "expected_ids": [
+      "M141"
+    ]
+  },
+  {
+    "topic": "money-care",
+    "query": "照护老人很累，家人只说多休息却没人接班",
+    "expected_ids": [
+      "M142"
+    ]
+  },
+  {
+    "topic": "money-protection",
+    "query": "买了好多保险和保障，不清楚分别解决什么",
+    "expected_ids": [
+      "M161"
+    ]
+  },
+  {
+    "topic": "money-protection",
+    "query": "销售口头说能赔，应该怎样核对文件",
+    "expected_ids": [
+      "M162"
+    ]
+  },
+  {
+    "topic": "money-decision",
+    "query": "一项收费由好几家公司收款，如何追查费用",
+    "expected_ids": [
+      "M181"
+    ]
+  },
+  {
+    "topic": "money-decision",
+    "query": "加盟商拿样板店收入保证我的回本，怎么核验",
+    "expected_ids": [
+      "M183"
+    ]
+  },
+  {
+    "topic": "family",
+    "query": "共同账户每笔支出都要对方审批，怎么讨论自主空间",
+    "expected_ids": [
+      "FAM01"
+    ]
+  },
+  {
+    "topic": "family",
+    "query": "伴侣愿意动手却事事等我提醒，我仍在操心",
+    "expected_ids": [
+      "FAM02"
+    ]
+  },
+  {
+    "topic": "family-capacity",
+    "query": "孩子放学接送与我的上班时间冲突",
+    "expected_ids": [
+      "K001"
+    ]
+  },
+  {
+    "topic": "family-capacity",
+    "query": "我想辞职带娃，但之后还想回去工作",
+    "expected_ids": [
+      "K003"
+    ]
+  },
+  {
+    "topic": "family-partner",
+    "query": "决定为伴侣换城市，只计算对方涨薪够吗",
+    "expected_ids": [
+      "K028"
+    ]
+  },
+  {
+    "topic": "family-partner",
+    "query": "要把重要资源交给伴侣，怎样保留自己的决定权",
+    "expected_ids": [
+      "K027"
+    ]
+  },
+  {
+    "topic": "family-generations",
+    "query": "父母愿意给首付，怎样先讲清这笔钱的性质",
+    "expected_ids": [
+      "K052"
+    ]
+  },
+  {
+    "topic": "family-generations",
+    "query": "搬回父母家省房租，家里规则怎么商量",
+    "expected_ids": [
+      "K053"
+    ]
+  },
+  {
+    "topic": "education",
+    "query": "给孩子只规划升学是不是忽略了其他能力",
+    "expected_ids": [
+      "EDU01"
+    ]
+  },
+  {
+    "topic": "education",
+    "query": "孩子什么事都由我安排，怎么培养自主能力",
+    "expected_ids": [
+      "EDU03"
+    ]
+  },
+  {
+    "topic": "family-competence",
+    "query": "孩子零花钱总花光，怎样让他练习取舍",
+    "expected_ids": [
+      "K077"
+    ]
+  },
+  {
+    "topic": "family-competence",
+    "query": "孩子出门总漏东西，大人要一直替他收拾吗",
+    "expected_ids": [
+      "K078"
+    ]
+  },
+  {
+    "topic": "family-spending",
+    "query": "教育费用第一年能交得起，后面整个学段怎么办",
+    "expected_ids": [
+      "K101"
+    ]
+  },
+  {
+    "topic": "family-spending",
+    "query": "孩子成绩差，如何判断缺知识还是执行而不是直接补课",
+    "expected_ids": [
+      "K103"
+    ]
+  },
+  {
+    "topic": "family-routes",
+    "query": "两个专业名字相似，怎样比较学习内容和就业入口",
+    "expected_ids": [
+      "K126"
+    ]
+  },
+  {
+    "topic": "family-routes",
+    "query": "学校公布就业率很好，怎样核实毕业去向样本",
+    "expected_ids": [
+      "K128"
+    ]
+  },
+  {
+    "topic": "family-transition",
+    "query": "大学开学只等老师通知，怎样找可用资源",
+    "expected_ids": [
+      "K151"
+    ]
+  },
+  {
+    "topic": "family-transition",
+    "query": "大学选课只挑容易拿高分的，合适吗",
+    "expected_ids": [
+      "K152"
+    ]
+  },
+  {
+    "topic": "family-inheritance",
+    "query": "孩子想创业，我该直接给他买一份事业吗",
+    "expected_ids": [
+      "K177"
+    ]
+  },
+  {
+    "topic": "family-inheritance",
+    "query": "家里有企业，怎样区分孩子继承身份和岗位能力",
+    "expected_ids": [
+      "K178"
+    ]
+  },
+  {
+    "topic": "comparison",
+    "query": "朋友消费很高级，是否说明他的财务更好",
+    "expected_ids": [
+      "CMP01"
+    ]
+  },
+  {
+    "topic": "comparison",
+    "query": "为了加入圈子不断透支消费，怎么停下来",
+    "expected_ids": [
+      "CMP02"
+    ]
+  },
+  {
+    "topic": "selfworth",
+    "query": "重要的人否定我，是否说明他的评价就是事实",
+    "expected_ids": [
+      "SELF02"
+    ]
+  },
+  {
+    "topic": "selfworth",
+    "query": "没信心只靠鼓励没用，怎样留下能力证据",
+    "expected_ids": [
+      "SELF03"
+    ]
+  },
+  {
+    "topic": "resilience-system",
+    "query": "准备同时换工作搬家给孩子转学，怎样看叠加风险",
+    "expected_ids": [
+      "R003"
+    ]
+  },
+  {
+    "topic": "resilience-system",
+    "query": "等到必须离开才找退路，准备时间从哪来",
+    "expected_ids": [
+      "R002"
+    ]
+  },
+  {
+    "topic": "resilience-agency",
+    "query": "职位下降后觉得整个人生都失败了",
+    "expected_ids": [
+      "R032"
+    ]
+  },
+  {
+    "topic": "resilience-agency",
+    "query": "不喜欢现在的工作但暂时需要这份收入",
+    "expected_ids": [
+      "R033"
+    ]
+  }
+]

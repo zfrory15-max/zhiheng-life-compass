@@ -1,0 +1,274 @@
+[
+  {
+    "id": "career",
+    "name": "工作与选择",
+    "intro": "公司给你的职位、市场愿意买的能力、家庭承受得起的风险，是三笔不同的账。换工作之前，先把它们算清楚。",
+    "count": 7,
+    "path": "references/scenarios/career.md",
+    "data_path": "data/themes/career.json"
+  },
+  {
+    "id": "work-risk",
+    "name": "职业收入的薄弱处",
+    "intro": "高工资是一段时间的结果，持续拿到收入还依赖客户、技术、城市和组织。先查清自己究竟押在什么上面。",
+    "count": 25,
+    "path": "references/scenarios/work-risk.md",
+    "data_path": "data/themes/work-risk.json"
+  },
+  {
+    "id": "work-skill",
+    "name": "能带走的本事",
+    "intro": "不要把熟悉公司当成熟悉市场。把解决问题、交付和判断的本事，练成离开原单位也能被检验的成果。",
+    "count": 25,
+    "path": "references/scenarios/work-skill.md",
+    "data_path": "data/themes/work-skill.json"
+  },
+  {
+    "id": "work-move",
+    "name": "求职与转岗的证据",
+    "intro": "换一个岗位要增加实际选择，不能只换一个让人安心的说法。条件、证据、退出安排都要先落纸。",
+    "count": 25,
+    "path": "references/scenarios/work-move.md",
+    "data_path": "data/themes/work-move.json"
+  },
+  {
+    "id": "work-org",
+    "name": "在组织里把事做成",
+    "intro": "工作不是考试。任务怎么定、资源谁来批、成果谁验收，都会影响努力最终换来什么。",
+    "count": 25,
+    "path": "references/scenarios/work-org.md",
+    "data_path": "data/themes/work-org.json"
+  },
+  {
+    "id": "work-business",
+    "name": "第二收入与小生意",
+    "intro": "第二收入需要真实客户和完整交付。一个人能开张，不等于一个人能把所有风险都扛住。",
+    "count": 25,
+    "path": "references/scenarios/work-business.md",
+    "data_path": "data/themes/work-business.json"
+  },
+  {
+    "id": "work-network",
+    "name": "关系与合作的分寸",
+    "intro": "关系不是通讯录，也不是万能通行证。信息、协作和信用有各自的边界，要用具体的小事验证。",
+    "count": 25,
+    "path": "references/scenarios/work-network.md",
+    "data_path": "data/themes/work-network.json"
+  },
+  {
+    "id": "work-info",
+    "name": "看懂信息与机会",
+    "intro": "一条热搜、一次聚会、一位成功者，都不等于市场全貌。把判断追到出处、条件和可验证的任务上。",
+    "count": 25,
+    "path": "references/scenarios/work-info.md",
+    "data_path": "data/themes/work-info.json"
+  },
+  {
+    "id": "work-culture",
+    "name": "文化资本与长期积累",
+    "intro": "文化资本不止一张文凭。理解不同环境、读懂规则、表达和判断，都要在实际使用中积累。",
+    "count": 24,
+    "path": "references/scenarios/work-culture.md",
+    "data_path": "data/themes/work-culture.json"
+  },
+  {
+    "id": "finance",
+    "name": "钱与生活",
+    "intro": "账面上有多少，与下个月能否照常生活，是两回事。先看现金、固定承诺和退出成本，再讨论体面、收益和想象中的未来。",
+    "count": 7,
+    "path": "references/scenarios/finance.md",
+    "data_path": "data/themes/finance.json"
+  },
+  {
+    "id": "money-cash",
+    "name": "现金要能在需要时到手",
+    "intro": "先检查付款时点、可用范围和替代通道。钱在账上与钱能按时付出去，往往是两回事。",
+    "count": 20,
+    "path": "references/scenarios/money-cash.md",
+    "data_path": "data/themes/money-cash.json"
+  },
+  {
+    "id": "money-income",
+    "name": "收入不能只看总额",
+    "intro": "拆开收入的来源、条件与到账节奏，找出同一件事会让哪些钱一起停下。",
+    "count": 20,
+    "path": "references/scenarios/money-income.md",
+    "data_path": "data/themes/money-income.json"
+  },
+  {
+    "id": "money-commitment",
+    "name": "长期承诺会压缩退路",
+    "intro": "大额承诺最容易藏起的是未来的付款义务和中途改变的代价。先问停下怎么办，再决定开始。",
+    "count": 20,
+    "path": "references/scenarios/money-commitment.md",
+    "data_path": "data/themes/money-commitment.json"
+  },
+  {
+    "id": "money-house",
+    "name": "住房有用，也会占住资源",
+    "intro": "把居住、现金支出、搬迁和交易条件分别看。房子的名义价格不能替代家庭的选择余地。",
+    "count": 20,
+    "path": "references/scenarios/money-house.md",
+    "data_path": "data/themes/money-house.json"
+  },
+  {
+    "id": "money-consumption",
+    "name": "体面不能靠持续加码维持",
+    "intro": "消费的负担不仅是付款，还包括配套、维护和不愿降级。把钱留给真正使用的东西。",
+    "count": 20,
+    "path": "references/scenarios/money-consumption.md",
+    "data_path": "data/themes/money-consumption.json"
+  },
+  {
+    "id": "money-business",
+    "name": "别让一处失败拖走全家",
+    "intro": "经营、亲友合作和家庭资金之间的连接，需要逐条看清。关系信任不能省略对责任和去向的核对。",
+    "count": 20,
+    "path": "references/scenarios/money-business.md",
+    "data_path": "data/themes/money-business.json"
+  },
+  {
+    "id": "money-retirement",
+    "name": "养老要有可持续的安排",
+    "intro": "把自己的生活、住房和照护需求写在前面，再谈对子女的支持与未来愿景。",
+    "count": 20,
+    "path": "references/scenarios/money-retirement.md",
+    "data_path": "data/themes/money-retirement.json"
+  },
+  {
+    "id": "money-care",
+    "name": "照护不能只靠一句我来",
+    "intro": "有人在场、有人能办、有人接班，是不同的条件。把任务、班次和备用安排具体到人。",
+    "count": 20,
+    "path": "references/scenarios/money-care.md",
+    "data_path": "data/themes/money-care.json"
+  },
+  {
+    "id": "money-protection",
+    "name": "保障从读懂已有文件开始",
+    "intro": "先弄清已经有哪些保障、谁来办理、需要什么材料。名称、熟人推荐和销售口头承诺都不能代替文件。",
+    "count": 20,
+    "path": "references/scenarios/money-protection.md",
+    "data_path": "data/themes/money-protection.json"
+  },
+  {
+    "id": "money-decision",
+    "name": "先识别自己不知道什么",
+    "intro": "守住家庭需要的是可检查的判断。识别经验边界、信息时效和利益关系，比跟着确定语气行动更有用。",
+    "count": 20,
+    "path": "references/scenarios/money-decision.md",
+    "data_path": "data/themes/money-decision.json"
+  },
+  {
+    "id": "family",
+    "name": "亲密与家庭",
+    "intro": "很多家庭矛盾并不缺道理，缺的是钱由谁决定、事情由谁负责、付出到哪里为止。把这些说到具体安排，才有改变的可能。",
+    "count": 6,
+    "path": "references/scenarios/family.md",
+    "data_path": "data/themes/family.json"
+  },
+  {
+    "id": "family-capacity",
+    "name": "家庭运转与职业保全",
+    "intro": "先看家庭的时间、照护和收入怎样相互牵制，再决定谁调整工作。能持续运转，才有余力谈发展。",
+    "count": 25,
+    "path": "references/scenarios/family-capacity.md",
+    "data_path": "data/themes/family-capacity.json"
+  },
+  {
+    "id": "family-partner",
+    "name": "伴侣合作与关系风险",
+    "intro": "承诺是否可靠，要看它如何落到共同决定、资源安排和冲突处理上。关系问题不能全靠一个人多付出。",
+    "count": 25,
+    "path": "references/scenarios/family-partner.md",
+    "data_path": "data/themes/family-partner.json"
+  },
+  {
+    "id": "family-generations",
+    "name": "代际支持与家庭边界",
+    "intro": "支持可以帮助起步，也可能变成几代人互相透支。把用途、权限和承接能力分别说清楚。",
+    "count": 25,
+    "path": "references/scenarios/family-generations.md",
+    "data_path": "data/themes/family-generations.json"
+  },
+  {
+    "id": "education",
+    "name": "陪孩子长大",
+    "intro": "升学只是教育的一部分。钱和时间有限时，每加一个安排，都要说清要解决什么、挤掉了什么，以及孩子最终能独立做什么。",
+    "count": 7,
+    "path": "references/scenarios/education.md",
+    "data_path": "data/themes/education.json"
+  },
+  {
+    "id": "family-competence",
+    "name": "孩子的生活与社会能力",
+    "intro": "会考试不等于能独立生活。把被成人包办的真实任务逐步交还，让能力在具体结果里出现。",
+    "count": 25,
+    "path": "references/scenarios/family-competence.md",
+    "data_path": "data/themes/family-competence.json"
+  },
+  {
+    "id": "family-spending",
+    "name": "教育投入与成本约束",
+    "intro": "资源有限时，教育选择必须说明解决什么、由谁执行、用什么证据续投，而不是跟着焦虑购买。",
+    "count": 25,
+    "path": "references/scenarios/family-spending.md",
+    "data_path": "data/themes/family-spending.json"
+  },
+  {
+    "id": "family-routes",
+    "name": "升学分流与路线核验",
+    "intro": "专业、学校和国家都是条件组合。先核实门槛、课程和退路，才能比较哪条路适合这个孩子。",
+    "count": 25,
+    "path": "references/scenarios/family-routes.md",
+    "data_path": "data/themes/family-routes.json"
+  },
+  {
+    "id": "family-transition",
+    "name": "从校园到工作",
+    "intro": "走出校园后，别人需要的是能使用的结果。把学习、求职和真实任务接起来，减少毕业时才补课的代价。",
+    "count": 25,
+    "path": "references/scenarios/family-transition.md",
+    "data_path": "data/themes/family-transition.json"
+  },
+  {
+    "id": "family-inheritance",
+    "name": "中产二代的承接能力",
+    "intro": "父母能提供启动条件，却不能把能力和判断直接过户。帮助下一代承接资源，要让他们参与决定、实践和修正。",
+    "count": 25,
+    "path": "references/scenarios/family-inheritance.md",
+    "data_path": "data/themes/family-inheritance.json"
+  },
+  {
+    "id": "comparison",
+    "name": "比较与处境",
+    "intro": "别人的消费、头衔和热闹，只展示了一部分。不要拿自己完整的生活，去追一张看不见成本的成绩单。先核实条件，再决定跟不跟。",
+    "count": 6,
+    "path": "references/scenarios/comparison.md",
+    "data_path": "data/themes/comparison.json"
+  },
+  {
+    "id": "selfworth",
+    "name": "自我与他人期待",
+    "intro": "别人怎么评价你、你想成为什么人、你现在能做什么，要分开处理。少给自己下总评，多看具体事实、责任和能改变的那一部分。",
+    "count": 6,
+    "path": "references/scenarios/selfworth.md",
+    "data_path": "data/themes/selfworth.json"
+  },
+  {
+    "id": "resilience-system",
+    "name": "风险识别与家庭退路",
+    "intro": "个人选择会沿着收入、照护和责任相互传导。先查依赖、准备时间和承接路径，再作难以撤回的承诺。",
+    "count": 31,
+    "path": "references/scenarios/resilience-system.md",
+    "data_path": "data/themes/resilience-system.json"
+  },
+  {
+    "id": "resilience-agency",
+    "name": "压力下的判断与自我保护",
+    "intro": "担心下滑时，人容易为了体面、证明自己或维持关系而扩大代价。把压力翻译成具体请求和行动，才不会在焦虑中继续失去选择。",
+    "count": 30,
+    "path": "references/scenarios/resilience-agency.md",
+    "data_path": "data/themes/resilience-agency.json"
+  }
+]
